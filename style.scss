@@ -1,0 +1,763 @@
+@import "globol";
+@import "mixsin";
+@import "varblese";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+#header{
+  padding: 40px 0;
+
+  .navbar{
+    position: fixed;
+    z-index: 100;
+    @include line();
+    h1{
+      font-weight: 700;
+      font-size: 36px;
+      color: #DB6300;
+      padding-right: 270px;
+      span{
+        font-weight: 700;
+        font-size: 36px;
+        color: #474747;
+      }
+    }
+    &--nav{
+      a{
+        font-size: 16px;
+        font-weight: 700;
+        color: #666666;
+        padding-right: 40px;
+      }
+    }
+    &--btn{
+      button{
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 15px 25px;
+        background: #DB6300;
+        border-radius: 10px;
+      }
+
+    }
+    &--menu{
+      display: none;
+    }
+  }
+}
+#hero{
+  padding: 0 0 40px 0;
+  .hero{
+    @include line();
+    &--title{
+      h1{
+        font-weight: 700;
+        font-size: 50px;
+        color: #474747;
+        span{
+          font-weight: 700;
+          font-size: 50px;
+          color: #DB6300;
+        }
+      }
+      h2{
+        font-weight: 700;
+        font-size: 26px;
+        color: #474747;
+        padding: 30px 0;
+      }
+      p{
+        width: 575px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #666666;
+        padding-bottom: 110px;
+      }
+      &__block{
+        top: 685px;
+        position: absolute;
+        width: 900px;
+        height: 100px;
+        background: rgba(199, 238, 237, 0.05);
+        border: 1px solid #CACACA;
+        border-radius: 16px;
+       display: flex;
+        align-items: center;
+        &--sqiore{
+          padding: 17px 40px;
+          h1{
+            font-weight: 700;
+            font-size: 16px;
+            color: #666666;
+          }
+          &__one{
+            width: 167px;
+            height: 38px;
+            border-radius: 8px;
+            @include center();
+            h2{
+              font-weight: 400;
+              font-size: 14px;
+              color: #CACACA;
+            }
+            &--icon{
+              display: flex;
+              align-items: center;
+              h2{
+                font-weight: 400;
+                font-size: 14px;
+                color: #CACACA;
+                //@include center();
+              }
+              ion-icon{
+                font-weight: 400;
+                font-size: 14px;
+                color: #CACACA;
+                padding-left: 60px;
+              }
+            }
+          }
+
+        }
+        &--btn{
+          @include center();
+          &__icon{
+            display: flex;
+            align-items: center;
+            button{
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 26px;
+              color: #FFFFFF;
+              width: 120px;
+              height: 50px;
+              background: #DB6300;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#care{
+  padding: 40px 0;
+  .care{
+    @include line();
+    &--title{
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        color: #474747;
+      }
+      p{
+        width: 539px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #666666;
+        padding: 45px 0;
+        flex-wrap: wrap;
+      }
+      &__group{
+        display: flex;
+        align-items: start;
+        &--icon{
+          margin-right: 36px;
+          width: 70px;
+          height: 70px;
+          background: #DB6300;
+          border-radius: 10px;
+          @include center();
+          ion-icon{
+            font-size: 30px;
+            font-weight: 500;
+            color: white;
+          }
+        }
+        &--title{
+          h2{
+            font-weight: 700;
+            font-size: 20px;
+            color: #474747;
+            margin-bottom: -30px;
+          }
+          p{
+            width: 300px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+}
+#our{
+  .our{
+    h2{
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #666666;
+    }
+    h1{
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: #474747;
+      padding: 15px 0;
+    }
+    p{
+      width: 865px;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0 auto;
+      text-align: center;
+      color: #666666;
+      padding-bottom:50px ;
+    }
+
+    &--block{
+      @include line();
+      &__one{
+        img{
+          margin: 36px 0 20px 0;
+        }
+        width: 270px;
+        height: 388px;
+        background: #FAFAFF;
+        border-radius: 24px;
+        //@include center();
+        text-align: center;
+        h1{
+          font-weight: 700;
+          font-size: 26px;
+          text-align: center;
+          color: #474747;
+        }
+        p{
+          width: 232px;
+          font-weight: 400;
+          font-size: 14px;
+          margin: 0 auto;
+          color: #666666;
+          padding-bottom: 30px;
+        }
+        button{
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px;
+          text-align: center;
+          color: #DB6300;
+          width: 170px;
+          height: 50px;
+          border: 1px solid #DB6300;
+          border-radius: 10px;
+          &:hover{
+            color: #FFFFFF;
+            background: #DB6300;
+          }
+        }
+      }
+    }
+  }
+}
+#swiper{
+  padding: 40px 0;
+  .swiper{
+    h2{
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: #474747;
+    }
+    h1{
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: #474747;
+      padding: 15px 0;
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #666666;
+      padding-bottom: 50px;
+    }
+    &--block{
+      &__title{
+        display: flex;
+        align-items: center;
+        h1{
+          font-weight: 700;
+          font-size: 20px;
+          color: #474747;
+          padding-right: 64px;
+        }
+        h2{
+          font-weight: 700;
+          font-size: 20px;
+          color: #DB6300;
+        }
+      }
+      p{
+        font-weight: 400;
+        font-size: 16px;
+        color: #666666;
+        padding: 17px 0;
+      }
+      &__icon{
+        display: flex;
+        align-items: center;
+        padding: 17px 0;
+        ion-icon{
+          font-size: 14px;
+          font-weight: 400;
+          color: #EEAA2B;
+          padding-right: 7px;
+        }
+        h2{
+          font-weight: 400;
+          font-size: 14px;
+          color: #CACACA;
+          padding-left: 7px;
+        }
+      }
+      button{
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 170px;
+        height: 50px;
+        background: #DB6300;
+        border-radius: 10px;
+        &:hover{
+          background: transparent;
+          border: solid 1px #DB6300;
+          color: #DB6300;
+        }
+      }
+    }
+  }
+}
+#book{
+  padding: 40px 0;
+  .book{
+    @include line();
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-between;
+    &--title{
+      h2{
+        font-weight: 700;
+        font-size: 16px;
+        color: #666666;
+      }
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        color: #474747;
+        padding: 15px 0;
+      }
+      p{
+        width: 550px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #666666;
+        padding-bottom: 34px;
+      }
+      &__block{
+        display: flex;
+        align-items: center;
+        &--icon{
+          @include center();
+          width: 60px;
+          height: 60px;
+          background: #EA880F;
+          border-radius: 8px;
+          ion-icon{
+            font-weight: 600;
+            font-size: 30px;
+            color: #FFFFFF;
+          }
+        }
+        &--text{
+          align-items: start;
+          padding-left: 40px;
+          h1{
+            font-weight: 700;
+            font-size: 20px;
+            color: #666666;
+            padding: 10px;
+          }
+          p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #666666;
+          }
+
+        }
+      }
+    }
+    &--img{
+      position: relative;
+      &__block{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include center();
+        width: 180px;
+        height: 80px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        &--sqoure{
+          display: flex;
+          align-items: center;
+          &__title{
+            padding-left: 15px;
+            .icon{
+              font-weight: 700;
+              font-size: 10px;
+              color: #FFFBF3;
+              border: 1px solid #3793D8;
+            }
+            h1{
+              font-weight: 700;
+              font-size: 10px;
+              color: #474A4D;
+            }
+            h2{
+              font-weight: 400;
+              font-size: 8px;
+              color: #8C8C8C;
+              padding-bottom: 6px;
+            }
+            &--icon{
+              display: flex;
+              align-items: center;
+              ion-icon{
+                font-weight: 400;
+                font-size: 8px;
+                color: #8C8C8C;
+              }
+            }
+          }
+        }
+      }
+      &__block1{
+        position: absolute;
+        top: 90px;
+        right: 0;
+        @include center();
+        width: 180px;
+        height: 80px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        &--sqoure{
+          display: flex;
+          align-items: center;
+          &__title{
+            padding-left: 15px;
+            .icon{
+              font-weight: 700;
+              font-size: 10px;
+              color: #FFFBF3;
+              border: 1px solid #3793D8;
+            }
+            h1{
+              font-weight: 700;
+              font-size: 10px;
+              color: #474A4D;
+            }
+            h2{
+              font-weight: 400;
+              font-size: 8px;
+              color: #8C8C8C;
+              padding-bottom: 6px;
+            }
+            &--icon{
+              display: flex;
+              align-items: center;
+              ion-icon{
+                font-weight: 400;
+                font-size: 8px;
+                color: #8C8C8C;
+              }
+            }
+          }
+        }
+      }
+      &__block{
+        &--one{
+          position: absolute;
+          width: 277px;
+          height: 156px;
+          background: #FFFFFF;
+          box-shadow: 0px 2px 4px 2px rgba(162, 160, 160, 0.15);
+          border-radius: 8px;
+          top: 370px;
+          left: 40px;
+          &__title{
+            display: flex;
+            align-items: center;
+            padding-top: 21px;
+            padding-left: 31px;
+            h1{
+              font-weight: 700;
+              font-size: 16px;
+              color: #474747;
+            }
+            h2{
+              font-weight: 700;
+              font-size: 16px;
+              padding-left: 46px;
+              color: #DB6300;
+            }
+
+          }
+          p{
+            font-weight: 400;
+            font-size: 8px;
+            color: #666666;
+            padding: 3px 0;
+            margin-left: 31px;
+          }
+          &--icon{
+            display: flex;
+            align-items: center;
+            padding: 6px 0;
+            margin-left: 31px;
+            ion-icon{
+              font-weight: 400;
+              font-size: 10px;
+              color: #EEAA2B;
+              padding-right: 5px;
+            }
+            h2{
+              font-weight: 400;
+              font-size: 14px;
+              color: #CACACA;
+            }
+          }
+          &--btn{
+            margin-left: 31px;
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            a{
+              font-weight: 700;
+              font-size: 14px;
+              color: #1F39BA;
+            }
+            ion-icon{
+              font-size:14px;
+              font-weight: 700;
+              color: #1F39BA;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#feed{
+  background: #FFFBF3;
+  padding: 40px 0;
+  position: relative;
+  .feed{
+    h2{
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #666666;
+    }
+    h1{
+      font-weight: 700;
+      font-size: 36px;
+      text-align: center;
+      color: #474747;
+      padding: 15px 0;
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #666666;
+      padding-bottom: 16px;
+    }
+    &--img{
+      @include center();
+      &__block{
+        @include center();
+        width: 300px;
+        height: 300px;
+        background: #FFF6E6;
+        border-radius: 50%;
+      }
+      &__group{
+        position: absolute;
+        top: 200px;
+        left: 300px;
+      }
+      &__group1{
+        position: absolute;
+        top: 300px;
+        left: 200px;
+      }
+      &__group2{
+        position: absolute;
+        top: 200px;
+        left: 1000px;
+      }
+      &__group3{
+        position: absolute;
+        top: 300px;
+        left: 1100px;
+      }
+
+    }
+  }
+}
+#footer{
+  padding: 20px 0;
+  background: url("/img/footer.svg") no-repeat center/cover;
+  .footer{
+    &--title{
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 25px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-bottom: 31px;
+      }
+      &__input{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input{
+          width: 770px;
+          height: 80px;
+          background: #FFFBFA;
+          border: none;
+          border-radius: 16px;
+          outline: none;
+        }
+        &--btn{
+          position: absolute;
+          top: 15px;
+          left: 754px;
+          button{
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            background: #DB6300;
+            border-radius: 8px;
+            &:hover{
+              background: #FFFFFF;
+              color: #DB6300;
+              border: solid 1px #DB6300;
+            }
+          }
+
+        }
+      }
+    }
+    &--text{
+      @include line();
+      align-items: start;
+      padding-top: 90px;
+      &__one{
+        h1{
+          font-weight: 700;
+          font-size: 36px;
+          color: #FFFFFF;
+          padding-bottom: 17px;
+        }
+        p{
+          width: 297px;
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+      }
+      &__link{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h1{
+          font-weight: 700;
+          font-size: 20px;
+          color: #FFFFFF;
+          padding-bottom: 30px;
+        }
+        a{
+          font-weight: 400;
+          font-size: 14px;
+          color: #FFFFFF;
+          padding: 4px 0;
+        }
+      }
+      &__contac{
+        h1{
+          font-weight: 700;
+          font-size: 20px;
+          color: #FFFFFF;
+          padding-bottom: 28px;
+        }
+        &--icon{
+          display: flex;
+          align-items: center;
+          padding-bottom: 6px;
+          ion-icon{
+            font-weight: 600;
+            font-size: 20px;
+            color: white;
+          }
+          a{
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+            padding-left: 20px;
+          }
+        }
+        &--icons{
+          display: flex;
+          align-items: center;
+          ion-icon{
+            font-weight: 600;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+          }
+        }
+      }
+    }
+    &--line{
+      width: 100%;
+      height: 0px;
+      border: 1px solid #FFFFFF;
+      margin-bottom: 17px;
+    }
+    &--font{
+      h2{
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+      }
+    }
+
+  }
+}
